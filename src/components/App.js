@@ -6,6 +6,7 @@ import Footer from './components/Footer.js'
 import BaseLayout from './components/BaseLayout.js'
 import ChildComponent from './components/ChildComponent'
 import ParentComponent from './components/ParentComponent'
+import DisplayComponent from './components/DisplayComponent'
 
 
 class App extends Component {

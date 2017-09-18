@@ -2,9 +2,10 @@ export default class ParentComponent extends Component {
   constructor(props){
     super(props);
 
-    
     //we are really in a *bind* here.... :)
     //fix it...
+    this.handleInput = this.handleInput.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
 
     //state lives here
     this.state = {
