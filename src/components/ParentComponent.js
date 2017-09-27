@@ -10,12 +10,13 @@ export default class ParentComponent extends Component {
     //state lives here
     this.state = {
       whatToSay: "",
-      whatWasSaid: "",
+      whatWasSaid: []
     }
   }
   handleInput(e) {
     e.preventDefault();
     //set the state on input change
+    let whatToSay = e.target.value
     this.setState({whatToSay: this.state.whatToSay});
   }
   handleSubmit(e) {
@@ -29,6 +30,7 @@ export default class ParentComponent extends Component {
 
   }
   render() {
+
     return (
       <div>Smart Component: I have a function, but something isn't working? I also need to pass that function to the ChildComponent.
         <div>
