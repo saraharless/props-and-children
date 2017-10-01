@@ -1,15 +1,18 @@
-export default class BaseLayout extends Component {
-  constructor(props){
-    super(props)
-  }
+import React, { Component } from 'react';
+import '../styles/App.css';
+import Header from './Header.js';
+import Footer from './Footer.js';
+
+class BaseLayout extends Component {
   render() {
     return (
-      <div className = "base">
-      // This should house Header and Footer components and be able to house any children components.
-        <Header />
-
-        <Footer />
+      <div>
+      <Header/>
+      {this.props.children}
+      <Footer/>
       </div>
     );
   }
 }
+
+export default BaseLayout;
